@@ -1,0 +1,67 @@
+*,
+::before,
+:root {
+    box-sizing: border-box;
+    /* font-size: 0.875rem; */
+    font-family: 'Rubik', sans-serif;
+    --yellow: #fec312;
+    --letter: #828282;
+}
+
+::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: inherit;
+    outline: 0 none;
+    /* outline: none; para qutar el contorno que viene predefinido */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    padding-left: 40px;
+}
+.header h5 strong{
+    color: var(--yellow);
+}
+
+.header .socialMedia{
+   justify-content: end;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+i{
+   color: black;
+   
+   
+}
+
+
