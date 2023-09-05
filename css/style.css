@@ -1,13 +1,13 @@
-*,
-::before,
 :root {
     box-sizing: border-box;
     /* font-size: 0.875rem; */
-    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
     --yellow: #fec312;
     --letter: #828282;
 }
 
+*,
+::before,
 ::after {
     margin: 0;
     padding: 0;
@@ -17,27 +17,35 @@
     /* outline: none; para qutar el contorno que viene predefinido */
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
-header{
+header {
+    background: url(/img/img3.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 90%;
     width: 100%;
-    height: 100vh;
-    background-image: url(/);
+    position: absolute;
+    left: 0;
+    top: 0;
+    
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
+    margin: 0 3%;
+    margin-top: 3%;
+    margin-bottom: 1%;
 
 }
 
-.header h5{
+
+.header h5 {
     font-size: 1.3rem;
     font-weight: bold;
     display: flex;
@@ -45,23 +53,86 @@ header{
     align-items: start;
     padding-left: 40px;
 }
-.header h5 strong{
+
+h5 strong {
     color: var(--yellow);
 }
 
-.header .socialMedia{
-   justify-content: end;
-}
-.menu{
+.button {
+    width: 50% ;
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
+
 }
 
-i{
-   color: black;
-   
-   
+.socialMedia a{
+    padding-left: 10px;
 }
 
+.socialMedia a:link, .socialMedia a:hover, .socialMedia a:visited{
+    color: white;
+}
+.loginAndSign{
+    display: flex;
+    
 
+} 
+
+.loginAndSign button{
+    background-color: var(--yellow);
+    color: white;
+    padding: 10px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.loginAndSign button:nth-child(1){
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.loginAndSign button:nth-child(2){
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.menu {
+    margin-left: 60%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .menu a:hover, .menu a:link, .menu a:visited {
+    color: white;
+    text-decoration: none;
+    
+ }
+
+.textHeader {
+    padding: 15% 0;
+
+}
+
+.textHeader h5 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.textHeader h5,
+.textHeader p {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5%;
+    color: white;
+
+}
