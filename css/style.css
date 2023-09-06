@@ -240,9 +240,11 @@ h5 strong {
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr ;
     gap: 10px 18px;
+    
     grid-template-areas:
+        ". . ."
         ". . .";
 }
 

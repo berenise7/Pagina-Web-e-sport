@@ -45,7 +45,7 @@ window.addEventListener("load", () => {
             "your next game",
             "steam uplay",
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, sequi."],
-    }
+    };
 
     getCard = () => {
         let card = `
