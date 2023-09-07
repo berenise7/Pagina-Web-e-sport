@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
             e.target.classList.toggle("fa-solid");
             let clicked = e.target.classList[1].split("")[1];
             console.log(clicked);
-            header.style.background = `url(/img/img${clicked}.jpg) no-repeat center`;
+            header.style.background = `url(img/img${clicked}.jpg) no-repeat center`;
 
         });
     });
