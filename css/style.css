@@ -17,6 +17,7 @@
     /* outline: none; para qutar el contorno que viene predefinido */
 }
 
+
 body {
     width: 100%;
     height: 100vh;
@@ -28,8 +29,8 @@ body {
 header {
     background: url(/img/img1.jpg) no-repeat center;
     background-size: cover !important;
-    height: 92%;
-    width: 100%;
+    height: 90%;
+    max-width: 100%;
     position: relative;
     left: 0;
     top: 0;
@@ -53,7 +54,7 @@ header {
     display: flex;
     justify-content: left;
     align-items: start;
-    padding-left: 40px;
+    padding-left: 2em;
 }
 
 h5 strong {
@@ -74,7 +75,7 @@ h5 strong {
 }
 
 .socialMedia a {
-    padding-left: 17px;
+    padding-left: 1em;
     transition: color 0.5s;
 }
 
@@ -91,7 +92,7 @@ h5 strong {
 .loginAndSign button {
     background-color: var(--yellow);
     color: white;
-    padding: 13px 60px;
+    padding: 1em 4.5em;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -168,10 +169,10 @@ h5 strong {
 }
 
 .carousel i {
-    font-size: 1.7rem; 
-    
+    font-size: 1.7rem;
+
     transition: color .5s;
-    
+
 }
 
 .carousel i:hover {
@@ -189,7 +190,7 @@ h5 strong {
     font-size: 2rem;
 }
 
-.teamText p {
+.teamText .pt {
     color: var(--letter);
     padding-top: 0.5em;
 }
@@ -199,7 +200,7 @@ h5 strong {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 18px;
+    gap: 0 2em;
     grid-template-areas:
         ". . .";
 }
@@ -217,7 +218,7 @@ h5 strong {
     max-width: 100%;
     height: auto;
     display: block;
-    
+
 }
 
 .team div h5 {
@@ -234,9 +235,12 @@ h5 strong {
 
 }
 
-.teamText p{
+.teamText .pt {
     margin-bottom: 1.5%;
+    text-transform: initial;
+    font-size: 1rem;
 }
+
 /* Image filter */
 
 .team .image-filter {
@@ -245,71 +249,77 @@ h5 strong {
     left: 0;
     width: 100%;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Color del filtro y opacidad */
-    transition: height 0.3s; /* Duración de la animación */
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: height 0.3s;
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    z-index: 1; /* Asegura que el filtro esté encima de la imagen */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     color: white;
     text-decoration: none;
 }
 
-.team .image-filter:link, .team .image-filter:visited{
+.team .image-filter:link,
+.team .image-filter:visited {
     color: white;
-    
-} 
 
-/* Estilo para el filtro al pasar el ratón */
+}
+
+
 .team div:hover .image-filter {
     height: 100%;
 }
 
 /* Card games */
 .games {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    gap: 10px 18px;
-    
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 18px;
+
     grid-template-areas:
         ". . ."
         ". . .";
 }
 
 .games div {
-    
-    padding-bottom: 15px;
+    height: 95%;
+    padding-bottom: 1em;
     -webkit-box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.52);
     box-shadow: 2px 5px 8px 1px rgba(0, 0, 0, 0.52);
 }
 
-.games div a:link, .games div a:visited{
+.games div a:link,
+.games div a:visited {
     text-decoration: none;
-    
-}
-.images{
-    width: 100%;
-    height: 80%;
+    color: var(--letter);
+
 }
 
-.games h5{
+.images {
+    width: 100%;
+    height: 75%;
+}
+
+.games h5 {
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
 }
-.games div h5, .games div p{
+
+.games div h5,
+.games div p {
     padding: 3px 10px;
 }
 
-.p1{
+.p1 {
     font-size: .7rem;
     text-transform: uppercase;
 }
 
-.p1 i{
+.p1 i {
     color: black;
 }
 
@@ -342,4 +352,95 @@ footer p a {
 
 footer p a:hover {
     color: #ff7504;
+}
+
+@media (max-width: 576px) {
+    header {
+        background-size: auto;
+    }
+
+    .header {
+        position: relative;
+        z-index: 1;
+    }
+
+    .header h5 {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        padding-left: .5em;
+    }
+
+    .button {
+        width: 90%;
+        justify-content: space-evenly;
+        margin-bottom: 25%;
+    }
+
+
+    .loginAndSign button {
+
+        padding: 1em 2em;
+    }
+
+    .menu {
+        position: relative;
+        z-index: 2;
+        margin-top: -24%;
+        margin-left: 16%;
+    }
+
+    .textHeader {
+        padding: 13em 0;
+    }
+
+    .textHeader h5 {
+        font-size: 2.03rem;
+    }
+
+    .textHeader h5,
+    .textHeader p {
+        padding: 0 7%;
+    }
+
+    .teamText .pt {
+        margin-bottom: 1em;
+    }
+
+    .team {
+        margin-top: 1.5%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .team div {
+        margin-bottom: 1em;
+        max-width: 100%;
+
+    }
+
+    .team div h5 {
+        font-size: 1.5rem;
+        padding: 1em 2em;
+    }
+
+    .games {
+        margin-top: 1.5%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .games div {
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+
+    .games div a img{
+        height: 450px;
+    }
+
+    .games div a p:nth-child(1){
+        margin-bottom: .3em !important;
+    }
+
+
 }
