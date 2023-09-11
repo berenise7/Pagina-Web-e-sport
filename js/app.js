@@ -73,7 +73,7 @@ window.addEventListener("load", () => {
             let card = `
         <div>
             <a href="#">
-                <img src="img/nnn.jpg" alt="" class="images">
+                <img src="/img/nnn.jpg" alt="" class="images">
                 <h5>xxx</h5>
                 <p class="p1"><i class="fa-solid fa-desktop"></i> zzz</p>
                 <p class="p2">yyy</p>
